@@ -1,27 +1,31 @@
+
+/* PAGE */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f6f8;
 }
 
+/* CONTAINER */
 .container {
   width: 420px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 10px;
 }
 
+/* FORM */
 form {
   display: flex;
   flex-direction: column;
 }
 
-/* Labels */
+/* LABELS */
 label {
   margin: 10px 0 5px;
 }
 
-/* Inputs, Select, Textarea */
+/* INPUTS */
 input,
 select,
 textarea {
@@ -30,10 +34,10 @@ textarea {
   border-radius: 5px;
 }
 
-/* FIRST INPUT SPECIAL STYLE */
+/* FIRST INPUT DIFFERENT STYLE */
 input:first-of-type {
-  border-radius: 12px;
   border: 2px solid royalblue;
+  border-radius: 12px;
 }
 
 /* FOCUS */
@@ -62,12 +66,13 @@ button {
   margin-top: 15px;
   padding: 10px;
   background-color: royalblue;
-  color: white;
+  color: whitesmoke;
   border: none;
   border-radius: 6px;
   cursor: pointer;
 }
 
+/* HOVER */
 button:hover {
   background-color: darkblue;
 }
@@ -80,14 +85,14 @@ button:hover {
   border-radius: 6px;
 }
 
-/* RADIO checked styling */
+/* REQUIRED: CHECKED RADIO STYLE (background + border + shadow) */
 .radio-group input[type="radio"]:checked {
-  accent-color: green;
-  box-shadow: 0 0 5px green;
+  background-color: lightgreen;
   border-color: green;
+  box-shadow: 0 0 5px green;
 }
 
-/* Change label text when checked */
-.radio-group input[type="radio"]:checked + span {
+/* REQUIRED: CHANGE LABEL TEXT COLOR WHEN SELECTED */
+.radio-group input[type="radio"]:checked + label {
   color: green;
 }
